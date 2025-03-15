@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../App.css";
 
 const Footer = () => {
@@ -9,8 +10,8 @@ const Footer = () => {
         <div className="footer-section">
           <img src="/logo.png" alt="Ecofare Gaming" className="footer-logo" />
           <p>
-            Ecofare Gaming is India's best online Rummy game portal, owned and operated by
-            ECOFARE TECHNOLOGIES PRIVATE LIMITED. We strive to provide the best Rummy experience.
+            BGM Gaming is India's best online Rummy game portal, owned and operated by
+            BGM GAME PRIVATE LIMITED. We strive to provide the best Rummy experience.
           </p>
         </div>
 
@@ -18,9 +19,9 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <li><Link to="/contact">Contact Us</Link></li>
+            <li><Link to="/terms">Terms & Conditions</Link></li>
+            <li><Link to="/privacy">Privacy Policy</Link></li>
           </ul>
         </div>
 
@@ -28,30 +29,37 @@ const Footer = () => {
         <div className="footer-section">
           <h3>More</h3>
           <ul>
-            <li><a href="#">Refund & Cancellation</a></li>
-            <li><a href="#">Responsible Rummy</a></li>
-            <li><a href="#">Legality</a></li>
+            <li><Link to="/refund">Refund & Cancellation</Link></li>
+            <li><Link to="/responsible-rummy">Responsible Rummy</Link></li>
+            {/* <li><Link to="/legality">Legality</Link></li> */}
           </ul>
         </div>
 
         {/* Contact Section */}
         <div className="footer-section">
           <h3>Contact</h3>
-          <p>Email: support@ecofaregaming.com</p>
+          <p>Email: support@bgmgame.com</p>
         </div>
       </div>
 
       {/* Download Button */}
-      <div className="download-section">
-        <a href="/download" className="download-btn">
+      {/* <div className="download-section">
+        <Link to="/download" className="download-btn">
+          <img src="/logo.png" alt="Android Icon" className="android-icon" />
+          Download Now
+        </Link>
+      </div> */}
+          <div className="download-section">
+        <a href="/assets/therummy.apk" download className="download-btn">
           <img src="/logo.png" alt="Android Icon" className="android-icon" />
           Download Now
         </a>
       </div>
 
+
       {/* Copyright */}
       <div className="footer-bottom">
-        <p>© Ecofare Gaming 2024, All Rights Reserved</p>
+        <p>© Bgm Game 2023, All Rights Reserved</p>
       </div>
     </footer>
   );

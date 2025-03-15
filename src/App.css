@@ -91,6 +91,12 @@
 .download-section {
   text-align: center;
   margin-top: 20px;
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+ 
 }
 
 .download-btn {
@@ -103,7 +109,9 @@
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+ 
 }
 
 .android-icon {
@@ -150,6 +158,9 @@
 
 .nav-links li {
   display: inline;
+  background-color: #00b300;
+  border: 1px solid rgb(2, 41, 2);
+  padding: 10px;
 }
 
 .nav-links a {
@@ -179,9 +190,10 @@
     top: 60px;
     left: 0;
     width: 100%;
-    background: #d92027;
+    background: #ffffff;
     padding: 10px 0;
     text-align: center;
+    box-shadow: 3px 10px 10px rgb(98, 98, 98);
   }
 
   .nav-links.active {
@@ -208,21 +220,23 @@ body {
   box-shadow: inset 0 0 10px #000000;
 }
 .about-content{
-  text-align: center;
+  text-align: left;
+  margin: 20px;
 }
 
 .about-content{
   padding-top: 40px;
 }
 .game-rule{
-  padding: 80px;
+  padding: 20px;
 }
 .game-rule{
 
-  text-align: center;
+  text-align: left;
 }
 .game-heading{
   background-color: #d6ffd6;
+  text-align: center;
 }
 
 /* General Styling */
@@ -354,4 +368,65 @@ a:hover {
   .input-box {
     width: 100%;
   }
+
+  .heading {
+    font-size: 25px;
+    background-image: radial-gradient(circle,green,black);
+    color: #fff;
+    padding: 10px;
+  }
+
+  .contact-container {
+    max-width: 500px;
+    margin: 20px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-top: 10%;
+  }
+
+  input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+    font-size: 14px;
+  }
+  
+}
+
+.heading {
+
+  background-image: radial-gradient(circle,rgb(209, 111, 0),rgb(0, 48, 10));
+  color: #fff;
+  padding: 10px;
+}
+.terms-container{
+  text-align: left;
+  margin: 30px;
+}
+
+.refund-container{
+  text-align: left;
+  margin: 30px;
+}
+.rum-head{
+  text-align: left;
+}
+.responsible-container{
+  margin: 30px;
+}
+
+.contact-heading{
+  text-align: center;
+  border-bottom: 1px solid rgb(169, 169, 169);
+  padding-bottom: 10px;
+}
+
+.headings{
+  background-color: #ddffdd;
+  text-align: center;
+  padding: 15px;
 }
